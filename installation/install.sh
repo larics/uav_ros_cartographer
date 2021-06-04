@@ -20,9 +20,9 @@ cd "$MY_PATH/.."
 
 # Install ROS
 wget https://raw.githubusercontent.com/larics/uav_ros_stack/main/installation/dependencies/ros.sh
-chmod +x install.sh
-bash install.sh
-rm -f install.sh
+chmod +x ros.sh
+bash ros.sh
+rm -f ros.sh
 
 # Install General ROS things
 wget https://raw.githubusercontent.com/larics/uav_ros_stack/main/installation/dependencies/general.sh
