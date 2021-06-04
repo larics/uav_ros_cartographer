@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>cartographer_config</name>
+  <version>0.0.0</version>
+  <description>This package holds the cartographer configuration files</description>
+  <maintainer email="lmark@todo.todo">lmark</maintainer>
+  <license>TODO</license>
+
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <export>
+
+  </export>
+</package>

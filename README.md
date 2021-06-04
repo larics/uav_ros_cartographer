@@ -1,2 +1,5 @@
-# uav_ros_cartographer
-This repository integrates Cartographer SLAM with the 'uav_ros_stack'
+# UAV ROS Cartographer
+
+## Introduction
+
+This repository integrates Cartographer SLAM with the 'uav_ros_stack'.

@@ -1,0 +1,50 @@
+location: .gitman
+sources:
+  - repo: https://github.com/larics/cartographer.git
+    name: cartographer
+    rev: larics-master
+    type: git
+    sparse_paths:
+      -
+    link: ros_packages/cartographer
+    links:
+      -
+    scripts:
+      - git submodule update --init --recursive
+  - repo: https://github.com/larics/cartographer_ros
+    name: cartographer_ros
+    rev: larics-master
+    type: git
+    sparse_paths:
+      -
+    link: ros_packages/cartographer_ros
+    links:
+      -
+    scripts:
+      - git submodule update --init --recursive
+sources_locked:
+  - repo: https://github.com/larics/cartographer.git
+    name: cartographer
+    rev: 093eccc77f41beffcef3633fe25980ef55702ef4
+    type: git
+    sparse_paths:
+      -
+    link: ros_packages/cartographer
+    links:
+      -
+    scripts:
+      - git submodule update --init --recursive
+  - repo: https://github.com/larics/cartographer_ros
+    name: cartographer_ros
+    rev: 0a9342083eb5340b93a804b3490715789ed8d194
+    type: git
+    sparse_paths:
+      -
+    link: ros_packages/cartographer_ros
+    links:
+      -
+    scripts:
+      - git submodule update --init --recursive
+groups:
+  -
+default_group: ''
