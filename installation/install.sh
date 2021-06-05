@@ -52,16 +52,16 @@ sudo apt-get install -y \
     libceres-dev \
     protobuf-compiler \
     libpcl-dev \
-    ros-$ROS_DISTRO-pcl-conversions
+    libgtest-dev \
+    ros-$ROS_DISTRO-pcl-conversions \
+    ros-$ROS_DISTRO-pcl-ros
 
 if [ "$distro" = "18.04" ]; then
     sudo apt-get install -y \
-    python-sphinx \
-    libgmock-dev
+    python-sphinx
 elif [ "$distro" = "20.04" ]; then
     sudo apt-get install -y \
-    python3-sphinx \
-    libgtest-dev
+    python3-sphinx
 fi
 
 # Install Gitman
