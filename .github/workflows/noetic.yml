@@ -53,4 +53,4 @@ jobs:
         run: |
           cd ~/carto_ws
           source /opt/ros/noetic/setup.bash
-          catkin build
+          catkin build --limit-status-rate 0.2
