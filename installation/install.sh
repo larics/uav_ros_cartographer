@@ -49,15 +49,19 @@ sudo apt-get install -y \
     lsb-release \
     ninja-build \
     stow \
-    libgmock-dev \
     libceres-dev \
     protobuf-compiler \
-    libpcl-dev
+    libpcl-dev \
+    ros-$ROS_DISTRO-pcl-conversions
 
 if [ "$distro" = "18.04" ]; then
-    sudo apt-get install -y python-sphinx 
+    sudo apt-get install -y \
+    python-sphinx \
+    libgmock-dev
 elif [ "$distro" = "20.04" ]; then
-    sudo apt-get install -y python3-sphinx 
+    sudo apt-get install -y \
+    python3-sphinx \
+    libgtest-dev
 fi
 
 # Install Gitman

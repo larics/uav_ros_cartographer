@@ -37,9 +37,20 @@ jobs:
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-      - uses: actions/checkout@v2
+
+        # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - name: Checkout repo and submodules
+        uses: actions/checkout@v2
+        with:
+          submodules: true
 
       # Runs a single command using the runners shell
-      - name: Install & Build
+      - name: Install
         run: ./installation/install_and_setup_workspace.sh
+
+      # Runs a single command using the runners shell
+      - name: Catkin Build
+        run: |
+          cd ~/carto_ws
+          source /opt/ros/melodic/setup.bash
+          catkin build

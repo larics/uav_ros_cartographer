@@ -33,4 +33,3 @@ ROOT_DIR=`dirname $MY_PATH`
 cd ~/$WORKSPACE_NAME/src
 ln -s $ROOT_DIR
 source /opt/ros/$ROS_DISTRO/setup.bash
-catkin build
