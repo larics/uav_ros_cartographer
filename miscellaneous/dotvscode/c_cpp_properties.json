@@ -1,0 +1,34 @@
+{
+  "configurations": [
+    {
+      "browse": {
+        "databaseFilename": "",
+        "limitSymbolsToIncludedHeaders": true
+      },
+      "includePath": [
+        "/home/lmark/Workspace/carto_ws/devel/include/**",
+        "/home/lmark/Workspace/uav_ws/devel/include/**",
+        "/opt/ros/noetic/include/**",
+        "/home/lmark/Workspace/uav_ws/src/uav_ros_simulation_modules/ardupilot_gazebo/include/**",
+        "/home/lmark/Workspace/uav_ws/src/uav_ros_simulation_modules/mav_comm/mav_msgs/include/**",
+        "/home/lmark/Workspace/uav_ws/src/uav_ros_simulation_modules/mav_comm/planning_msgs/include/**",
+        "/home/lmark/Workspace/uav_ws/src/uav_ros_simulation_modules/rotors_simulator/rotors_control/include/**",
+        "/home/lmark/Workspace/uav_ws/src/uav_ros_simulation_modules/rotors_simulator/rotors_gazebo_plugins/include/**",
+        "/home/lmark/Workspace/uav_ws/src/uav_ros_simulation_modules/rotors_simulator/rotors_joy_interface/include/**",
+        "/home/lmark/Workspace/uav_ws/src/uav_ros_stack_modules/uav_ros_control/include/**",
+        "/home/lmark/Workspace/uav_ws/src/uav_ros_stack_modules/uav_ros_general/include/**",
+        "/home/lmark/Workspace/uav_ws/src/uav_ros_stack_modules/uav_ros_lib/include/**",
+        "/home/lmark/Workspace/uav_ws/src/uav_ros_stack_modules/uav_ros_tests/include/**",
+        "/home/lmark/Workspace/uav_ws/src/uav_ros_stack_modules/uav_ros_tracker/include/**",
+        "/home/lmark/Workspace/uav_ws/src/velodyne_simulator/velodyne_gazebo_plugins/include/**",
+        "/home/lmark/Workspace/carto_ws/src/uav_ros_cartographer_modules/cartographer",
+        "/home/lmark/Workspace/carto_ws/src/uav_ros_cartographer_modules/cartographer_ros/cartographer_ros",
+        "/home/lmark/Workspace/carto_ws/build/cartographer_ros/_deps/abseil-src/",
+        "/usr/src/googletest/googlemock/include/**",
+        "/usr/include/**"
+      ],
+      "name": "ROS"
+    }
+  ],
+  "version": 4
+}
