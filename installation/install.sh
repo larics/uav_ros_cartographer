@@ -19,16 +19,10 @@ MY_PATH=`( cd "$MY_PATH" && pwd )`
 cd "$MY_PATH/.."
 
 # Install ROS
-wget https://raw.githubusercontent.com/larics/uav_ros_stack/main/installation/dependencies/ros.sh
-chmod +x ros.sh
-bash ros.sh
-rm -f ros.sh
+curl https://raw.githubusercontent.com/larics/uav_ros_stack/main/installation/dependencies/ros.sh | bash
 
 # Install General ROS things
-wget https://raw.githubusercontent.com/larics/uav_ros_stack/main/installation/dependencies/general.sh
-chmod +x general.sh
-bash general.sh
-rm -f general.sh
+curl https://raw.githubusercontent.com/larics/uav_ros_stack/main/installation/dependencies/general.sh | bash
 
 # Install Cartographer specific dependencies
 sudo apt-get update
@@ -65,10 +59,7 @@ elif [ "$distro" = "20.04" ]; then
 fi
 
 # Install Gitman
-wget https://raw.githubusercontent.com/larics/uav_ros_stack/main/installation/dependencies/gitman.sh
-chmod +x gitman.sh
-bash gitman.sh
-rm -f gitman.sh
+curl https://raw.githubusercontent.com/larics/uav_ros_stack/main/installation/dependencies/gitman.sh | bash
 
 # Install Gitman pckages
 gitman install --force

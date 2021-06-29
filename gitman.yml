@@ -25,7 +25,7 @@ sources:
 sources_locked:
   - repo: https://github.com/larics/cartographer.git
     name: cartographer
-    rev: 093eccc77f41beffcef3633fe25980ef55702ef4
+    rev: 619bc3e7bccfff028a7beda78cb69e3d7771b4e6
     type: git
     sparse_paths:
       -

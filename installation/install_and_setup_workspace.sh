@@ -23,10 +23,7 @@ bash $MY_PATH/install.sh
 
 # Install workspace
 WORKSPACE_NAME=carto_ws
-wget https://raw.githubusercontent.com/larics/uav_ros_stack/main/installation/workspace_setup.sh
-chmod +x workspace_setup.sh
-bash workspace_setup.sh $WORKSPACE_NAME
-rm -f workspace_setup.sh
+curl https://raw.githubusercontent.com/larics/uav_ros_stack/main/installation/workspace_setup.sh | bash -s $WORKSPACE_NAME
 
 # Build catkin workspace
 ROOT_DIR=`dirname $MY_PATH`

@@ -34,6 +34,7 @@ jobs:
   build:
     # The type of runner that the job will run on
     runs-on: ubuntu-20.04
+    needs: cancel
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
@@ -54,3 +55,12 @@ jobs:
           cd ~/carto_ws
           source /opt/ros/noetic/setup.bash
           catkin build --limit-status-rate 0.2
+
+      - name: Run Cartographer Tests
+        run: |
+          cd ~/carto_ws/src
+          source /opt/ros/noetic/setup.bash
+          catkin build --limit-status-rate 0.2 --cmake-args -DCATKIN_ENABLE_TESTING=1
+          cd ~/carto_ws/build
+          make test
+        continue-on-error: true
