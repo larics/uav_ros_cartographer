@@ -60,7 +60,15 @@ jobs:
         run: |
           cd ~/carto_ws/src
           source /opt/ros/melodic/setup.bash
-          catkin build --limit-status-rate 0.2 --cmake-args -DCATKIN_ENABLE_TESTING=1
+          catkin build cartographer --limit-status-rate 0.2 --cmake-args -DCATKIN_ENABLE_TESTING=1
           cd ~/carto_ws/build/cartographer
           make test
-        continue-on-error: true
+      
+      - name: Run Cartographer-ROS Tests
+        if: always()
+        run: |
+          cd ~/carto_ws/src
+          source /opt/ros/melodic/setup.bash
+          catkin build cartographer_ros --limit-status-rate 0.2 --catkin-make-args run_tests
+          cd ~/carto_ws
+          catkin_test_results build/cartographer_ros
