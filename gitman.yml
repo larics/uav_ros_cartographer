@@ -36,7 +36,7 @@ sources_locked:
       - git submodule update --init --recursive
   - repo: https://github.com/larics/cartographer_ros
     name: cartographer_ros
-    rev: 9acc6246cf90fab45dae5a26a04a0b11a0e8fdbd
+    rev: 302562cbff2f5943ef6e53c0618e3b8196e52a0f
     type: git
     sparse_paths:
       -
