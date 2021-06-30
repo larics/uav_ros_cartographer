@@ -1,0 +1,27 @@
+name: carto_bag
+root: ./
+startup_window: roscore
+pre_window: 
+  source ~/Workspace/carto_ws/devel/setup.zsh &&
+  export UAV_NAMESPACE=danieli2 &&
+  source custom_config/bag_setup_danieli2.sh
+windows:
+  - roscore:
+      layout: tiled
+      panes:
+        - roscore
+        - waitForRos; sleep 5; rosparam set use_sim_time true; rosbag play $BAG_NAME --clock
+          $BAG_POINT_TOPIC:=$POINT_TOPIC $BAG_IMU_TOPIC:=$IMU_TOPIC $BAG_TRANSFORM_TOPIC:=$TRANSFORM_TOPIC
+          /tf:=/tf_unused /tf_static:=/tf_static_unused
+  - slam:
+      layout: tiled
+      panes:
+        - waitForRos; rosparam set use_sim_time true; roslaunch uav_ros_general robot_state_publisher.launch
+          urdf:=$(rospack find uav_ros_general)/urdf/ouster-imu.urdf.xacro
+        - waitForRos; rosparam set use_sim_time true; 
+          roslaunch uav_ros_general cartographer.launch 
+          simulation:=false
+          configuration_directory:=$CONFIGURATION_DIRECTORY
+          configuration_basename:=$CONFIGURATION_BASENAME
+          imu:=$IMU_TOPIC points2:=$POINT_TOPIC transform:=$TRANSFORM_TOPIC
+        - rosrun cartographer_ros cartographer_occupancy_grid_node __ns:=$UAV_NAMESPACE
