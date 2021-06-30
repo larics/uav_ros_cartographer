@@ -3,6 +3,7 @@
 export BAG_NAME=$HOME/Bags/carto_bags/carto_indoor_ouster.bag
 export CONFIGURATION_BASENAME=ouster_pozyx_old.lua
 export CONFIGURATION_DIRECTORY=$(pwd)/custom_config
+export CARTO_URDF=$(rospack find uav_ros_general)/urdf/ouster-imu.urdf.xacro
 
 # Define bag topics
 export BAG_POINT_TOPIC=/os_cloud_node/points

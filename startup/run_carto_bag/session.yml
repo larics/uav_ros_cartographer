@@ -17,7 +17,7 @@ windows:
       layout: tiled
       panes:
         - waitForRos; rosparam set use_sim_time true; roslaunch uav_ros_general robot_state_publisher.launch
-          urdf:=$(rospack find uav_ros_general)/urdf/ouster-imu.urdf.xacro
+          urdf:=$CARTO_URDF
         - waitForRos; rosparam set use_sim_time true; 
           roslaunch uav_ros_general cartographer.launch 
           simulation:=false
@@ -25,4 +25,6 @@ windows:
           configuration_basename:=$CONFIGURATION_BASENAME
           imu:=$IMU_TOPIC points2:=$POINT_TOPIC transform:=$TRANSFORM_TOPIC
         - waitForRos; rosrun cartographer_ros cartographer_occupancy_grid_node __ns:=$UAV_NAMESPACE
-        - waitForRos; rosrun rviz rviz -d custom_config/display_bag.rviz
+        - waitForRos; 
+          sed "s/PLACEHOLDER_NS/$UAV_NAMESPACE/g" custom_config/display_bag.rviz > custom_config/.display_bag.rviz;
+          rosrun rviz rviz -d custom_config/.display_bag.rviz

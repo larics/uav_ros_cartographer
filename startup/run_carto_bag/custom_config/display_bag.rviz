@@ -68,11 +68,11 @@ Visualization Manager:
       Frame Timeout: 15
       Frames:
         All Enabled: false
-        danieli2/base_link:
+        PLACEHOLDER_NS/base_link:
           Value: true
-        danieli2/imu_link:
+        PLACEHOLDER_NS/imu_link:
           Value: false
-        danieli2/map:
+        PLACEHOLDER_NS/map:
           Value: true
         os_imu:
           Value: true
@@ -85,9 +85,9 @@ Visualization Manager:
       Show Axes: true
       Show Names: true
       Tree:
-        danieli2/map:
-          danieli2/base_link:
-            danieli2/imu_link:
+        PLACEHOLDER_NS/map:
+          PLACEHOLDER_NS/base_link:
+            PLACEHOLDER_NS/imu_link:
               {}
             os_lidar:
               os_imu:
@@ -104,11 +104,11 @@ Visualization Manager:
         Expand Link Details: false
         Expand Tree: false
         Link Tree Style: Links in Alphabetic Order
-        danieli2/base_link:
+        PLACEHOLDER_NS/base_link:
           Alpha: 1
           Show Axes: false
           Show Trail: false
-        danieli2/imu_link:
+        PLACEHOLDER_NS/imu_link:
           Alpha: 1
           Show Axes: false
           Show Trail: false
@@ -124,7 +124,7 @@ Visualization Manager:
           Show Trail: false
           Value: true
       Name: RobotModel
-      Robot Description: danieli2/robot_description
+      Robot Description: PLACEHOLDER_NS/robot_description
       TF Prefix: ""
       Update Interval: 0
       Value: true
@@ -136,7 +136,7 @@ Visualization Manager:
       Low Resolution: false
       Name: Submaps
       Queue Size: 10
-      Submap query service: /danieli2/submap_query
+      Submap query service: /PLACEHOLDER_NS/submap_query
       Submaps:
         All: true
         All Submap Pose Markers: true
@@ -145,11 +145,11 @@ Visualization Manager:
           1.320: true
           2.320: true
           3.320: true
-          4.265: true
-          5.105: true
+          4.243: true
+          5.83: true
           Submap Pose Markers: true
           Value: true
-      Topic: /danieli2/submap_list
+      Topic: /PLACEHOLDER_NS/submap_list
       Tracking frame: base_link
       Unreliable: false
       Value: true
@@ -176,14 +176,14 @@ Visualization Manager:
       Size (Pixels): 3
       Size (m): 0.029999999329447746
       Style: Flat Squares
-      Topic: /danieli2/scan_matched_points2
+      Topic: /PLACEHOLDER_NS/scan_matched_points2
       Unreliable: false
       Use Fixed Frame: true
       Use rainbow: true
       Value: true
     - Class: rviz/MarkerArray
       Enabled: true
-      Marker Topic: /danieli2/trajectory_node_list
+      Marker Topic: /PLACEHOLDER_NS/trajectory_node_list
       Name: Trajectories
       Namespaces:
         Trajectory 0: true
@@ -191,7 +191,7 @@ Visualization Manager:
       Value: true
     - Class: rviz/MarkerArray
       Enabled: false
-      Marker Topic: /danieli2/landmark_poses_list
+      Marker Topic: /PLACEHOLDER_NS/landmark_poses_list
       Name: Landmark Poses
       Namespaces:
         {}
@@ -199,7 +199,7 @@ Visualization Manager:
       Value: false
     - Class: rviz/MarkerArray
       Enabled: false
-      Marker Topic: /danieli2/constraint_list
+      Marker Topic: /PLACEHOLDER_NS/constraint_list
       Name: Constraints
       Namespaces:
         {}
@@ -211,7 +211,7 @@ Visualization Manager:
       Draw Behind: false
       Enabled: true
       Name: Map
-      Topic: /danieli2/map
+      Topic: /PLACEHOLDER_NS/map
       Unreliable: false
       Use Timestamp: false
       Value: true
@@ -225,7 +225,7 @@ Visualization Manager:
       Channel Name: intensity
       Class: rviz/PointCloud2
       Color: 255; 255; 255
-      Color Transformer: Intensity
+      Color Transformer: FlatColor
       Decay Time: 0
       Enabled: true
       Invert Rainbow: false
@@ -236,9 +236,9 @@ Visualization Manager:
       Queue Size: 10
       Selectable: true
       Size (Pixels): 3
-      Size (m): 0.009999999776482582
+      Size (m): 0.07999999821186066
       Style: Flat Squares
-      Topic: /danieli2/scan_matched_points2
+      Topic: /PLACEHOLDER_NS/scan_matched_points2
       Unreliable: false
       Use Fixed Frame: true
       Use rainbow: true
@@ -247,7 +247,7 @@ Visualization Manager:
   Global Options:
     Background Color: 100; 100; 100
     Default Light: true
-    Fixed Frame: danieli2/map
+    Fixed Frame: PLACEHOLDER_NS/map
     Frame Rate: 30
   Name: root
   Tools:
@@ -287,9 +287,9 @@ Visualization Manager:
       Invert Z Axis: false
       Name: Current View
       Near Clip Distance: 0.009999999776482582
-      Pitch: 1.4747965335845947
+      Pitch: 1.4347965717315674
       Target Frame: <Fixed Frame>
-      Yaw: 0.007213961333036423
+      Yaw: 0.0072165075689554214
     Saved: ~
 Window Geometry:
   Displays:
