@@ -24,4 +24,5 @@ windows:
           configuration_directory:=$CONFIGURATION_DIRECTORY
           configuration_basename:=$CONFIGURATION_BASENAME
           imu:=$IMU_TOPIC points2:=$POINT_TOPIC transform:=$TRANSFORM_TOPIC
-        - rosrun cartographer_ros cartographer_occupancy_grid_node __ns:=$UAV_NAMESPACE
+        - waitForRos; rosrun cartographer_ros cartographer_occupancy_grid_node __ns:=$UAV_NAMESPACE
+        - waitForRos; rosrun rviz rviz -d custom_config/display_bag.rviz
