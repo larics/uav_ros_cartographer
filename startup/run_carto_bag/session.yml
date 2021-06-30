@@ -20,7 +20,8 @@ windows:
           urdf:=$CARTO_URDF
         - waitForRos; rosparam set use_sim_time true; 
           roslaunch uav_ros_general cartographer.launch 
-          simulation:=false
+          simulation:=false 
+          enable_starter:=$ENABLE_STARTER use_fixed_yaw:=$USE_FIXED_YAW fixed_yaw:=$FIXED_YAW starter_transform:=$TRANSFORM_TOPIC
           configuration_directory:=$CONFIGURATION_DIRECTORY
           configuration_basename:=$CONFIGURATION_BASENAME
           imu:=$IMU_TOPIC points2:=$POINT_TOPIC transform:=$TRANSFORM_TOPIC

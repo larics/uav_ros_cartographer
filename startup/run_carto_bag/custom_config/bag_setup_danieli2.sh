@@ -5,6 +5,11 @@ export CONFIGURATION_BASENAME=ouster_pozyx_old.lua
 export CONFIGURATION_DIRECTORY=$(pwd)/custom_config
 export CARTO_URDF=$(rospack find uav_ros_general)/urdf/ouster-imu.urdf.xacro
 
+# Starter parameters
+export ENABLE_STARTER=true
+export USE_FIXED_YAW=true
+export FIXED_YAW=0
+
 # Define bag topics
 export BAG_POINT_TOPIC=/os_cloud_node/points
 export BAG_IMU_TOPIC=/danieli2/mavros/imu/data
