@@ -8,9 +8,10 @@
 This repository integrates Cartographer SLAM with the [uav_ros_stack](https://github.com/larics/uav_ros_stack) on Ardupilot or PX4 UAV platforms. In a simulation environment this packages is intended to be used with [uav_ros_simulation](https://github.com/larics/uav_ros_simulation). 
 
 This repository installs the following:
-* [cartographer](https://github.com/larics/cartographer) - Cartographer is a system that provides real-time simultaneous localization and mapping (SLAM) in 2D and 3D across multiple platforms and sensor configurations.
-* [cartographer_ros](https://github.com/larics/cartographer_ros) - Provides ROS integration for Cartographer.
-* [cartographer_config](ros_packages/cartographer_config) - This package holds Cartographer specific configuration files.
+| ROS Package                                                                               | Description | 18.04  | 20.04|
+|-----------------------|--------------------------------------------------------------------------------|------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------|
+| [cartographer](https://github.com/larics/cartographer/tree/larics-master) | Cartographer is a system that provides real-time simultaneous localization and mapping (SLAM) in 2D and 3D across multiple platforms and sensor configurations | [![Melodic](https://github.com/larics/cartographer/actions/workflows/melodic.yml/badge.svg)](https://github.com/larics/cartographer/actions/workflows/melodic.yml) | [![Noetic](https://github.com/larics/cartographer/actions/workflows/noetic.yml/badge.svg)](https://github.com/larics/cartographer/actions/workflows/noetic.yml)|
+| [cartographer_ros](https://github.com/larics/cartographer_ros/tree/larics-master) | Provides ROS integration for Cartographer | [![Melodic](https://github.com/larics/cartographer_ros/actions/workflows/melodic.yml/badge.svg)](https://github.com/larics/cartographer_ros/actions/workflows/melodic.yml) | [![Noetic](https://github.com/larics/cartographer_ros/actions/workflows/noetic.yml/badge.svg)](https://github.com/larics/cartographer_ros/actions/workflows/noetic.yml) |
 
 ## Installation
 
