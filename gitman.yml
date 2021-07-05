@@ -36,11 +36,7 @@ sources_locked:
       - git submodule update --init --recursive
   - repo: https://github.com/larics/cartographer_ros
     name: cartographer_ros
-<<<<<<< HEAD
-    rev: e20b169e59d0f9117c89e2954c2343d53fb72b16
-=======
     rev: 9ede7fd93fdbf71b440d587e4659ea26a96c6fcd
->>>>>>> [gitman.yml] Update commit locks
     type: git
     sparse_paths:
       -
