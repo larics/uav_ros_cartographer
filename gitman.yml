@@ -25,7 +25,7 @@ sources:
 sources_locked:
   - repo: https://github.com/larics/cartographer.git
     name: cartographer
-    rev: 85a5243d6e70256c72774813822cc3e70efa2c06
+    rev: f547c069a50f572bb0ce1566c06a233d2d1bef6f
     type: git
     sparse_paths:
       -
@@ -36,7 +36,7 @@ sources_locked:
       - git submodule update --init --recursive
   - repo: https://github.com/larics/cartographer_ros
     name: cartographer_ros
-    rev: 9ede7fd93fdbf71b440d587e4659ea26a96c6fcd
+    rev: 1bb45b61301fdda1b92b2daf43b11e17f3dba57c
     type: git
     sparse_paths:
       -
