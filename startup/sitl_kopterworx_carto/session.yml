@@ -16,7 +16,7 @@ windows:
   - arm&takeof:
       layout: tiled
       panes:
-        - waitForRos; waitForOdometry; roslaunch uav_ros_control pid_carrot_carto.launch manual_takeoff:=false odometry:=/$UAV_NAMESPACE/uav/cartographer/odometry_filtered_acc
+        - waitForRos; waitForOdometry; roslaunch uav_ros_control pid_carrot_carto.launch manual_takeoff:=false odometry:=/$UAV_NAMESPACE/uav/cartographer/odometry_filtered_acc default_params:=custom_config/position_control_carto.params.yaml
         - waitForRos; waitForSLAM; rosrun ardupilot_gazebo automatic_takeoff.sh
   - slam:
       layout: tiled
