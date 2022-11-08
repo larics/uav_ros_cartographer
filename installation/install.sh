@@ -56,6 +56,12 @@ if [ "$distro" = "18.04" ]; then
 elif [ "$distro" = "20.04" ]; then
     sudo apt-get install -y \
     python3-sphinx
+
+    # TODO: Steps to fix issues while building on 20.04, incorporate to install procedure
+    # sudo pip3 uninstall Sphinx
+    # sudo pip3 uninstall jinja2
+    # sudo pip3 install Sphinx
+    # pip install markupsafe==2.0.1
 fi
 
 # Install Gitman
